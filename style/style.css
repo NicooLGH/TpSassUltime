@@ -1,14 +1,14 @@
 @font-face {
   font-family: Allura;
-  src: url(./fonts/Allura-Regular.ttf);
+  src: url(../fonts/Allura-Regular.ttf);
 }
 @font-face {
   font-family: Poppins;
-  src: url(./fonts/Poppins-Medium.ttf);
+  src: url(../fonts/Poppins-Medium.ttf);
 }
 @font-face {
   font-family: RobotoLight;
-  src: url(./fonts/Roboto-Light.ttf);
+  src: url(../fonts/Roboto-Light.ttf);
 }
 body {
   margin: 0;
@@ -42,7 +42,7 @@ a:hover {
 header {
   position: relative;
   background-color: green;
-  background: url(./img/bg-slider-06.jpg) center/cover;
+  background: url(../img/bg-slider-06.jpg) center/cover;
   min-height: 100vh;
 }
 header nav {

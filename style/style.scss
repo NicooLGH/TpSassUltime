@@ -1,0 +1,112 @@
+$color-beige: rgb(238, 238, 238);
+$color-black: rgb(33, 32, 30);
+
+@font-face {
+  font-family: Allura;
+  src: url(../fonts/Allura-Regular.ttf);
+}
+@font-face {
+  font-family: Poppins;
+  src: url(../fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: RobotoLight;
+  src: url(../fonts/Roboto-Light.ttf);
+}
+body {
+  margin: 0;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  margin: 0;
+}
+h2 {
+  margin: 0;
+}
+h3 {
+  margin: 0;
+}
+a {
+  cursor: pointer;
+  transition: 0.2s;
+  &:hover {
+    scale: 1.4;
+  }
+}
+
+header {
+  position: relative;
+  background-color: green;
+  background: url(../img/bg-slider-06.jpg) center/cover;
+  min-height: 100vh;
+  nav {
+    padding: 15px 0;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 10% 82% 8%;
+    width: 80%;
+    margin: 0 auto;
+    .nav-logo {
+      font-family: Allura;
+      font-size: 2rem;
+      color: $color-beige;
+    }
+    .nav-elements {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      color: $color-beige;
+      font-family: RobotoLight;
+      text-transform: uppercase;
+      font-size: 0.7rem;
+      padding: 0 15px;
+      li {
+        cursor: pointer;
+      }
+    }
+    .nav-rs {
+      display: flex;
+      justify-content: space-around;
+      a {
+        color: $color-beige;
+        font-size: 0.7rem;
+      }
+    }
+  }
+  .header-content {
+    position: absolute;
+    text-align: center;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    h1 {
+      font-family: Allura;
+      color: #a67245;
+      font-size: 3rem;
+      font-weight: 100;
+    }
+    h2 {
+      font-family: Poppins;
+      font-size: 3.2rem;
+      color: $color-beige;
+      margin-top: -28px;
+      text-transform: uppercase;
+      letter-spacing: 8px;
+    }
+    img {
+      margin: 32px 0;
+      height: 27px;
+    }
+    p {
+      margin: 0;
+      font-family: RobotoLight;
+      color: $color-beige;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      letter-spacing: 5px;
+    }
+  }
+}
