@@ -263,3 +263,103 @@ header {
     z-index: -1;
   }
 }
+.section3 {
+  padding: 100px 15px 65px;
+  background-color: $color-black;
+  .reservation {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 75%;
+    max-width: 1300px;
+    margin: 0 auto;
+    .timeopen {
+      background: black;
+      color: $color-beige;
+      padding: 20px;
+      .time-open-content {
+        border: 1px dashed $color-beige;
+        padding: 25px 0;
+        text-align: center;
+        h3 {
+          font-family: Allura;
+          color: $color-gold;
+          font-size: 2.5rem;
+          font-weight: 100;
+        }
+        h4 {
+          font-family: Poppins;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          font-size: 1.3rem;
+          margin-top: -15px;
+        }
+        img {
+          margin-top: 25px;
+        }
+        h5 {
+          font-family: poppins;
+          text-transform: uppercase;
+          color: $color-gold;
+          font-weight: 300;
+          font-size: 1.1rem;
+          margin: 35px 0 15px;
+        }
+        p {
+          font-family: RobotoLight;
+          font-size: 0.8rem;
+        }
+      }
+    }
+    .form {
+      background: $color-beige;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 15px 0;
+      h3 {
+        font-family: Allura;
+        color: $color-gold;
+        font-size: 2.5rem;
+        font-weight: 100;
+      }
+      h4 {
+        font-family: Poppins;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 1.7rem;
+        margin-top: -18px;
+      }
+      img {
+        margin-top: 25px;
+      }
+      .form-input {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 25px 0 35px;
+        > * {
+          margin: 10px;
+          padding: 10px 0;
+          border: none;
+          border-bottom: 1px solid black;
+          background: none;
+        }
+      }
+      button {
+        padding: 12px 34px;
+        border-radius: 50px;
+        font-family: Poppins;
+        text-transform: uppercase;
+        background: $color-black;
+        color: $color-beige;
+        letter-spacing: 4px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover {
+          scale: 1.05;
+        }
+      }
+    }
+  }
+}
